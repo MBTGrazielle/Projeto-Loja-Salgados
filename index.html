@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Salgados & Cia</title>
+    <link href="./assets/css/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="./assets/js/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <section class="sectionLogo">
+        <img src="./assets/img/banner.jpeg" class="img-fluid" alt="..." />
+      </section>
+      <section class="sectionMenuPrincipal">
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            MENU
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">SOBRE NÓS</a></li>
+            <li><a class="dropdown-item" href="#">CONTATO</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="sectionConteudoMovimentado">
+        <center>
+          <marquee behavior="scroll" direction="left">
+            <p class="textoMovimento">
+              O Senhor é o meu pastor e nada me faltará. Salmos 23:1-6 ⛪
+            </p>
+          </marquee>
+        </center>
+      </section>
+    </header>
+    <main>
+      <section class="sobre">
+        <h2 class="sobre__titulo">Sejam bem vindos a Loja Salgados & Cia</h2>
+        <p class="sobre__descricao">Lista de produtos</p>
+      </section>
+      <section class="sectionProdutos">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <ul id="item-list">
+              <li data-frito="35.00" id="data-precoFrito">
+                Cento de Salgado Frito - R$ 35.00 <br>
+                <label for="centoSalgado-frito">Quantidade</label><br>
+                  <input
+                    id="quantidadeFrito"
+                    <input
+                    type="range"
+                    name="vol"
+                    value="1"
+                    min="1"
+                    max="100"
+                    oninput="display1.value=value"
+                    onchange="display1.value=value"
+                  />
+                  <input type="text" id="display1" value="1" readonly /><br>
+                  <button onclick="addToCart('Cento de Salgado Frito',35)">
+                  Adicionar ao Carrinho
+                </button>
+              </li>
+            </div>
+            <div class="col">
+              <li data-fritar="30.00" id="data-precoSemFritar">
+                Cento de Salgado Sem Fritar R$ 30.00 <br> <label for="cento-de-salgado-sem-fritar"
+                >Quantidade</label
+              >
+              <input
+                id="quantidadeSemFritar"
+                <input
+                type="range"
+                name="vol1"
+                value="1"
+                min="1"
+                max="100"
+                oninput="display2.value=value"
+                onchange="display2.value=value"
+              />
+              <input type="text" id="display2" value="1" readonly />
+                <button onclick="addToCart('Cento de Salgado Sem Fritar',30)">
+                  Adicionar ao Carrinho
+                </button>
+              </li>
+            </div>
+            <div class="col">
+              <li data-coxinha="3.00" id="data-precoCoxinha">
+                Salgado Grande - Coxinha R$ 3.00 <br>
+                <label for="quantidadeGrande-coxinha">Quantidade</label>
+                  <input
+                    id="quantidadeTotal"
+                    <input
+                    type="range"
+                    name="vol1"
+                    value="1"
+                    min="1"
+                    max="100"
+                    oninput="display3.value=value"
+                    onchange="display3.value=value"
+                  />
+                  <input type="text" id="display3" value="1" readonly />
+                <button onclick="addToCart('Salgado Grande - Coxinha',3)">
+                  Adicionar ao Carrinho
+                </button>
+              </li>
+            </div>
+            <div class="col">
+              <li data-croquete="3.00" id="data-precoCroquete">
+                Salgado Grande - Croquete R$ 3.00 <br>
+                <label for="quantidadeGrande-croquete"
+                    >Quantidade</label
+                  >
+                  <input
+                    id="quantidadeTotal"
+                    <input
+                    type="range"
+                    name="vol1"
+                    value="1"
+                    min="1"
+                    max="100"
+                    oninput="display4.value=value"
+                    onchange="display4.value=value"
+                  />
+                  <input type="text" id="display4" value="1" readonly />
+                <button onclick="addToCart('Salgado Grande - Croquete',3)">
+                  Adicionar ao Carrinho
+                </button>
+              </li>
+            </div>
+            <div class="col">
+              <li data-salsicha="3.00" id="data-precoSalsicha">
+                Salgado Grande - Salsicha R$ 3.00 <br>
+                <label for="quantidadeGrande-salsicha"
+                    >Quantidade</label
+                  >
+                  <input
+                    id="quantidadeTotal"
+                    <input
+                    type="range"
+                    name="vol1"
+                    value="1"
+                    min="1"
+                    max="100"
+                    oninput="display5.value=value"
+                    onchange="display5.value=value"
+                  />
+                  <input type="text" id="display5" value="1" readonly />
+                <button onclick="addToCart('Salgado Grande - Salsicha',3)">
+                  Adicionar ao Carrinho
+                </button>
+              </li>
+            </div>
+            <div class="col">
+              <li data-bomba="3.00" id="data-precoBomba">
+                Salgado Grande - Bomba R$ 3.00 <br>
+                <label for="quantidadeGrande-bomba">Quantidade</label>
+                  <input
+                    id="quantidadeTotal"
+                    <input
+                    type="range"
+                    name="vol1"
+                    value="1"
+                    min="1"
+                    max="100"
+                    oninput="display6.value=value"
+                    onchange="display6.value=value"
+                  />
+                  <input type="text" id="display6" value="1" readonly />
+                <button onclick="addToCart('Salgado Grande - Bomba',3)">
+                  Adicionar ao Carrinho
+                </button>
+              </li>
+            </div>
+          </div>
+        </div>
+       </ul>
+      </section>
+      <section class="sectionCompraFinal">
+        <h3>Compra detalhada</h3>
+        <ul id="cart"></ul>
+        <p>Subtotal: R$ <span id="subtotal">0,00</span></p>
+    <p>Total: R$ <span id="total">0,00</span></p>
+        <button onclick="clearCart()">Limpar Carrinho</button>
+
+        <abbr title=""
+          ><a
+            href="https://wa.me/5531971437896?text=Olá%20Grazi,%20vim%20do%20seu%20Portfólio"
+            ><button>Enviar Pedido</button></a
+          ></abbr
+      </section>
+    </main>
+
+    <section class="sectionScriptBoostrap">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
+  </body>
+</html>

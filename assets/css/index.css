@@ -1,0 +1,77 @@
+header {
+  background-color: rgb(247, 247, 198);
+  color: #fff;
+  padding: 10px;
+}
+
+.sectionLogo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  background: black !important;
+  font-weight: bold !important;
+}
+.btn:hover {
+  background: rgb(153, 151, 151) !important;
+  color: black !important;
+  font-weight: bold !important;
+}
+
+.textoMovimento {
+  color: #000000;
+}
+
+.sobre {
+  padding: 2rem;
+  text-align: center;
+}
+
+.sobre__titulo {
+  color: #8d0606;
+  font-family: Pacifico, cursive;
+  font-size: 3.1875rem;
+}
+
+.sobre__descricao {
+  color: #595959;
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+
+.produtos,
+.carrinho {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.produtos {
+  border-right: 1px solid #ccc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+#display1,
+#display2,
+#display3,
+#display4,
+#display5,
+#display6 {
+  margin-bottom: 0.4rem;
+}
